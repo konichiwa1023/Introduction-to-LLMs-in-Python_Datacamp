@@ -1,0 +1,9 @@
+# Complete the function
+def tokenize_function(data):
+    return tokenizer(data["interaction"], 
+                 return_tensors="pt", 
+                 padding=True, 
+                 truncation=True, 
+                 max_length=64)
+
+tokenized_in_batches = train_data.map(tokenize_function, batched=True)
