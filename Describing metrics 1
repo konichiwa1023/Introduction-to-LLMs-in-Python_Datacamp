@@ -1,0 +1,5 @@
+# Obtain a description of each metric
+print(accuracy.description)
+print(precision.description)
+print(recall.description)
+print(f1.description)
